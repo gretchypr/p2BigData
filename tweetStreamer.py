@@ -31,8 +31,7 @@ if __name__ == "__main__":
                  credentials["CONSUMER_KEY"], credentials["CONSUMER_SECRET"])
     print("Start getting tweets")
     # Set up twitter stream
-    keywords = ['Trump', 'Flu', 'Zika', 'Ebola', 'Diarrhea', 'Headache', 'Measles',
-                'trump', 'flu', 'zika', 'ebola', 'diarrhea', 'headache', 'measles']
+    keywords = ['Flu', 'Zika', 'Ebola', 'Diarrhea', 'Headache', 'Measles', 'flu', 'zika', 'ebola', 'diarrhea', 'headache', 'measles']
     while True:
         try:
             stream = TwitterStream(auth=auth, secure=True)
@@ -41,9 +40,9 @@ if __name__ == "__main__":
                 output_file.write(json.dumps(tweet) + "\n")
                 # Display some tweet information
                 print(json.dumps(tweet))
-                print("ID: " + tweet["id"])
-                print("User: " + tweet["user"]["screen_name"])
-                print("Text: " + tweet["text"])
+                print("ID: " + str(tweet["id"]))
+                print("User: " + str(tweet["user"]["screen_name"]))
+                print("Text: " + str(tweet["text"]))
         except TwitterError as e:
             # If limit is reached wait 5 minutes
             print(e)
