@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5da0d06-3f19-4bc1-b19a-3b5d92003c1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparkPrograms/SparkMain.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/credentials.json" afterPath="$PROJECT_DIR$/TweetCollector/credentials.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/output_tweets.json" afterPath="$PROJECT_DIR$/TweetCollector/output_tweets.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tweetStreamer.py" afterPath="$PROJECT_DIR$/TweetCollector/tweetStreamer.py" />
+    <list default="true" id="f5da0d06-3f19-4bc1-b19a-3b5d92003c1e" name="Default" comment="Finished spark code">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkPrograms/SparkMain.py" afterPath="$PROJECT_DIR$/SparkPrograms/SparkMain.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SparkMain.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SparkMain.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SparkPrograms/SparkMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
-              <caret line="105" column="15" lean-forward="true" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+            <state relative-caret-position="289">
+              <caret line="194" column="0" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -40,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="results.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/results.txt">
+      <file leaf-file-name="output_tweets.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TweetCollector/output_tweets.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            <state relative-caret-position="171">
+              <caret line="243" column="244" lean-forward="true" selection-start-line="243" selection-start-column="244" selection-end-line="243" selection-end-column="244" />
               <folding />
             </state>
           </provider>
@@ -76,6 +72,8 @@
       <find>tweets</find>
       <find>The</find>
       <find>me</find>
+      <find>after</find>
+      <find>lem</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -94,8 +92,8 @@
         <option value="$PROJECT_DIR$/credentials.json" />
         <option value="$PROJECT_DIR$/SparkPrograms/SparkCodes.py" />
         <option value="$PROJECT_DIR$/SparkPrograms/TweetHandler.py" />
-        <option value="$PROJECT_DIR$/SparkPrograms/SparkMain.py" />
         <option value="$PROJECT_DIR$/results.txt" />
+        <option value="$PROJECT_DIR$/SparkPrograms/SparkMain.py" />
       </list>
     </option>
   </component>
@@ -122,6 +120,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,7 +142,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,13 +225,21 @@
       <option name="presentableId" value="Default" />
       <updated>1542158625697</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finished spark code">
+      <created>1543039351184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543039351184</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-4" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18804781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19123507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.251944" sideWeight="0.37609562" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -256,11 +262,49 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished spark code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished spark code" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TweetCollector/credentials.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="65" lean-forward="false" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkPrograms/SparkMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="105" column="15" lean-forward="true" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TweetCollector/tweetStreamer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TweetCollector/credentials.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -440,29 +484,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TweetCollector/output_tweets.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198991">
-          <caret line="1" column="5226" lean-forward="true" selection-start-line="1" selection-start-column="5226" selection-end-line="1" selection-end-column="5226" />
+        <state relative-caret-position="171">
+          <caret line="243" column="244" lean-forward="true" selection-start-line="243" selection-start-column="244" selection-end-line="243" selection-end-column="244" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparkPrograms/SparkMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="105" column="15" lean-forward="true" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+        <state relative-caret-position="289">
+          <caret line="194" column="0" lean-forward="true" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
