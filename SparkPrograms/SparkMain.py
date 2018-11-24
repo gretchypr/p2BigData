@@ -111,7 +111,11 @@ def countWords(tweets, output):
 initial_data = spark.read.json('/input/output_tweets.json')
 total_rows = initial_data.count()
 tweet_count = 0
-output_file = open('results.txt', 'w')
+hashtag_file = open('hashtags_results.txt', 'w')
+user_file = open('users_results.txt', 'w')
+count_file = open('count_results.txt', 'w')
+keyword_file = open('keyword_results.txt', 'w')
+
 
 # Function for converting created_at date string to created timeStamp type
 date_converter = udf(lambda x: datetime.strptime(x[0:20] + x[26:len(x)], "%a %b %d %H:%M:%S %Y"), TimestampType())
@@ -145,32 +149,32 @@ while tweet_count < total_rows:
     # Get list of the texts of each tweet
     tweet_texts = tweets_one_hour.select('full_text').collect()
     if tweets_one_hour.count() != 0:
-        output_file.write("Top ten keywords at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
+        keyword_file.write("Top ten keywords at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
                           + one_hour_end_date.strftime("%H:%M:%S") + "\n")
         print("Top ten keywords at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
               + one_hour_end_date.strftime("%H:%M:%S"))
         # Print top ten keywords in the last hour
-        getKeywords(tweet_texts, output_file)
-        output_file.write("Word occurrences at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
+        getKeywords(tweet_texts, keyword_file)
+        count_file.write("Word occurrences at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
                           + one_hour_end_date.strftime("%H:%M:%S") + "\n")
         print("Word occurrences at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
               + one_hour_end_date.strftime("%H:%M:%S"))
         # Print the occurence of certain words
-        countWords(tweet_texts, output_file)
+        countWords(tweet_texts, count_file)
         # Get list of all the hashtags
         hashtags = tweets_one_hour.select('hashtags').collect()
-        output_file.write("Top ten trending hashtags at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
+        hashtag_file.write("Top ten trending hashtags at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
                           + one_hour_end_date.strftime("%H:%M:%S") + "\n")
         print("Top ten trending hashtags at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
               + one_hour_end_date.strftime("%H:%M:%S"))
         # Print the top 10 trending hashtags in the last hour
-        getTrendingHashtags(hashtags, output_file)
+        getTrendingHashtags(hashtags, hashtag_file)
     if tweets_twelve_hours.count() != 0:
         # Get the users and count them. Order them in ascending order of the number of tweets they have posted
         tweets_twelve_hours.createOrReplaceTempView("tweet")
         users = spark.sql("select username, count(username) as tweets_posted from tweet "
                           "group by username order by tweets_posted")
-        output_file.write("Top ten participants of " + str(users.count()) + " at "
+        user_file.write("Top ten participants of " + str(users.count()) + " at "
                           + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
                           + twelve_hour_end_date.strftime("%H:%M:%S") + "\n")
         print("Top ten participants of " + str(users.count()) + " at "
@@ -180,7 +184,7 @@ while tweet_count < total_rows:
         user_list = users.collect()
         i = 1
         for user in user_list:
-            output_file.write(str(i) + ". " + user['username'] + " " + str(user['tweets_posted']) + "\n")
+            user_file.write(str(i) + ". " + user['username'] + " " + str(user['tweets_posted']) + "\n")
             i = i + 1
             if i >= 11:
                 break
@@ -192,4 +196,3 @@ while tweet_count < total_rows:
     one_hour_end_date = one_hour_end_date + timedelta(hours=1)
     # 12 hours after start date
     twelve_hour_end_date = twelve_hour_end_date + timedelta(hours=1)
-

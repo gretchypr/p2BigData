@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Graphs</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+    <script src= "node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src= "node_modules/chart.js/dist/Chart.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="graphs.js"> </script>
+    <style>
+        .node {
+            cursor: pointer;
+        }
+        .node:hover {
+            stroke: #000;
+            stroke-width: 1.5px;
+        }
+        .node--leaf {
+            fill: white;
+        }
+        .label {
+            font: 9px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-anchor: middle;
+            text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+        }
+        .label,
+        .node--root,
+        .node--leaf {
+            pointer-events: none;
+        }
+        .node-mess {
+          cursor: pointer;
+        }
+        .node-mess circle {
+          fill: #fff;
+          stroke: steelblue;
+          stroke-width: 1.5px;
+        }
+        .node-mess text {
+          font: 10px sans-serif;
+        }
+        .link-mess {
+          fill: none;
+          /*stroke: steelblue;*/
+          opacity: 0.3;
+          /*stroke-width: 1.5px;*/
+        }
+        #levels-mess{
+          margin-left: 120px;
+        }
+   </style>
+</head>
+<body>
+    <div class="charts">
+			<h1>Charts</h1>
+            <h3>Top keywords per hour</h3>
+			<svg id="keywords" width="500" height="500"></svg>
+            <h3>Word Count per hour</h3>
+            <svg id="word_count" width="1500" height="1500"></svg>
+            <h3>Top Hashtags per hour</h3>
+            <svg id="hashtags" width="1500" height="1500"></svg>
+            <h3>Top Users per 12 hours</h3>
+            <svg id="users" width="1000" height="500"></svg>
+    </div>
+    <footer>
+    	<p>2018 Copyright of ICOM6115. Look at the pretty graphs.</p>
+    </footer>
+</body>
+</html>
