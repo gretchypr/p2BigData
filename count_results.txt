@@ -1,4 +1,4 @@
-Word occurrences at Fri Nov 16 2018 04:00:00 to 04:59:59
+Word occurrences at Fri Nov 16 2018 04:00:00-04:59:59
 1. trump 19
 2. flu 0
 3. diarrhea 0
@@ -6,7 +6,7 @@ Word occurrences at Fri Nov 16 2018 04:00:00 to 04:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Fri Nov 16 2018 18:00:00 to 18:59:59
+Word occurrences at Fri Nov 16 2018 18:00:00-18:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -14,7 +14,7 @@ Word occurrences at Fri Nov 16 2018 18:00:00 to 18:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Fri Nov 16 2018 21:00:00 to 21:59:59
+Word occurrences at Fri Nov 16 2018 21:00:00-21:59:59
 1. trump 0
 2. flu 0
 3. diarrhea 0
@@ -22,7 +22,7 @@ Word occurrences at Fri Nov 16 2018 21:00:00 to 21:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Fri Nov 16 2018 22:00:00 to 22:59:59
+Word occurrences at Fri Nov 16 2018 22:00:00-22:59:59
 1. trump 2
 2. flu 0
 3. diarrhea 0
@@ -30,7 +30,7 @@ Word occurrences at Fri Nov 16 2018 22:00:00 to 22:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Fri Nov 16 2018 23:00:00 to 23:59:59
+Word occurrences at Fri Nov 16 2018 23:00:00-23:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -38,7 +38,7 @@ Word occurrences at Fri Nov 16 2018 23:00:00 to 23:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 00:00:00 to 00:59:59
+Word occurrences at Sat Nov 17 2018 00:00:00-00:59:59
 1. trump 2
 2. flu 0
 3. diarrhea 0
@@ -46,7 +46,7 @@ Word occurrences at Sat Nov 17 2018 00:00:00 to 00:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 01:00:00 to 01:59:59
+Word occurrences at Sat Nov 17 2018 01:00:00-01:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -54,7 +54,7 @@ Word occurrences at Sat Nov 17 2018 01:00:00 to 01:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 02:00:00 to 02:59:59
+Word occurrences at Sat Nov 17 2018 02:00:00-02:59:59
 1. trump 6
 2. flu 0
 3. diarrhea 0
@@ -62,7 +62,7 @@ Word occurrences at Sat Nov 17 2018 02:00:00 to 02:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 03:00:00 to 03:59:59
+Word occurrences at Sat Nov 17 2018 03:00:00-03:59:59
 1. trump 3
 2. flu 0
 3. diarrhea 0
@@ -70,7 +70,7 @@ Word occurrences at Sat Nov 17 2018 03:00:00 to 03:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 04:00:00 to 04:59:59
+Word occurrences at Sat Nov 17 2018 04:00:00-04:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -78,7 +78,7 @@ Word occurrences at Sat Nov 17 2018 04:00:00 to 04:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 05:00:00 to 05:59:59
+Word occurrences at Sat Nov 17 2018 05:00:00-05:59:59
 1. trump 3
 2. flu 0
 3. diarrhea 0
@@ -86,7 +86,7 @@ Word occurrences at Sat Nov 17 2018 05:00:00 to 05:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 06:00:00 to 06:59:59
+Word occurrences at Sat Nov 17 2018 06:00:00-06:59:59
 1. trump 0
 2. flu 0
 3. diarrhea 0
@@ -94,7 +94,7 @@ Word occurrences at Sat Nov 17 2018 06:00:00 to 06:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 07:00:00 to 07:59:59
+Word occurrences at Sat Nov 17 2018 07:00:00-07:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -102,7 +102,7 @@ Word occurrences at Sat Nov 17 2018 07:00:00 to 07:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 08:00:00 to 08:59:59
+Word occurrences at Sat Nov 17 2018 08:00:00-08:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -110,7 +110,7 @@ Word occurrences at Sat Nov 17 2018 08:00:00 to 08:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 09:00:00 to 09:59:59
+Word occurrences at Sat Nov 17 2018 09:00:00-09:59:59
 1. trump 0
 2. flu 0
 3. diarrhea 0
@@ -118,7 +118,7 @@ Word occurrences at Sat Nov 17 2018 09:00:00 to 09:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 10:00:00 to 10:59:59
+Word occurrences at Sat Nov 17 2018 10:00:00-10:59:59
 1. trump 3
 2. flu 0
 3. diarrhea 0
@@ -126,7 +126,7 @@ Word occurrences at Sat Nov 17 2018 10:00:00 to 10:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 11:00:00 to 11:59:59
+Word occurrences at Sat Nov 17 2018 11:00:00-11:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -134,7 +134,7 @@ Word occurrences at Sat Nov 17 2018 11:00:00 to 11:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 12:00:00 to 12:59:59
+Word occurrences at Sat Nov 17 2018 12:00:00-12:59:59
 1. trump 2
 2. flu 0
 3. diarrhea 0
@@ -142,7 +142,7 @@ Word occurrences at Sat Nov 17 2018 12:00:00 to 12:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 13:00:00 to 13:59:59
+Word occurrences at Sat Nov 17 2018 13:00:00-13:59:59
 1. trump 4
 2. flu 0
 3. diarrhea 0
@@ -150,7 +150,7 @@ Word occurrences at Sat Nov 17 2018 13:00:00 to 13:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 14:00:00 to 14:59:59
+Word occurrences at Sat Nov 17 2018 14:00:00-14:59:59
 1. trump 0
 2. flu 0
 3. diarrhea 0
@@ -158,7 +158,7 @@ Word occurrences at Sat Nov 17 2018 14:00:00 to 14:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 15:00:00 to 15:59:59
+Word occurrences at Sat Nov 17 2018 15:00:00-15:59:59
 1. trump 2
 2. flu 0
 3. diarrhea 0
@@ -166,7 +166,7 @@ Word occurrences at Sat Nov 17 2018 15:00:00 to 15:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 16:00:00 to 16:59:59
+Word occurrences at Sat Nov 17 2018 16:00:00-16:59:59
 1. trump 1
 2. zika 1
 3. flu 0
@@ -174,7 +174,7 @@ Word occurrences at Sat Nov 17 2018 16:00:00 to 16:59:59
 5. measles 0
 6. ebola 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 17:00:00 to 17:59:59
+Word occurrences at Sat Nov 17 2018 17:00:00-17:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -182,7 +182,7 @@ Word occurrences at Sat Nov 17 2018 17:00:00 to 17:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 18:00:00 to 18:59:59
+Word occurrences at Sat Nov 17 2018 18:00:00-18:59:59
 1. flu 1
 2. trump 0
 3. diarrhea 0
@@ -190,7 +190,7 @@ Word occurrences at Sat Nov 17 2018 18:00:00 to 18:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 19:00:00 to 19:59:59
+Word occurrences at Sat Nov 17 2018 19:00:00-19:59:59
 1. trump 7
 2. flu 0
 3. diarrhea 0
@@ -198,7 +198,7 @@ Word occurrences at Sat Nov 17 2018 19:00:00 to 19:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 20:00:00 to 20:59:59
+Word occurrences at Sat Nov 17 2018 20:00:00-20:59:59
 1. trump 5
 2. flu 0
 3. diarrhea 0
@@ -206,7 +206,7 @@ Word occurrences at Sat Nov 17 2018 20:00:00 to 20:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 21:00:00 to 21:59:59
+Word occurrences at Sat Nov 17 2018 21:00:00-21:59:59
 1. trump 4
 2. flu 2
 3. diarrhea 0
@@ -214,7 +214,7 @@ Word occurrences at Sat Nov 17 2018 21:00:00 to 21:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sat Nov 17 2018 22:00:00 to 22:59:59
+Word occurrences at Sat Nov 17 2018 22:00:00-22:59:59
 1. trump 2
 2. flu 0
 3. diarrhea 0
@@ -222,7 +222,7 @@ Word occurrences at Sat Nov 17 2018 22:00:00 to 22:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 00:00:00 to 00:59:59
+Word occurrences at Sun Nov 18 2018 00:00:00-00:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -230,7 +230,7 @@ Word occurrences at Sun Nov 18 2018 00:00:00 to 00:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 01:00:00 to 01:59:59
+Word occurrences at Sun Nov 18 2018 01:00:00-01:59:59
 1. trump 4
 2. flu 0
 3. diarrhea 0
@@ -238,7 +238,7 @@ Word occurrences at Sun Nov 18 2018 01:00:00 to 01:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 02:00:00 to 02:59:59
+Word occurrences at Sun Nov 18 2018 02:00:00-02:59:59
 1. headache 1
 2. trump 0
 3. flu 0
@@ -246,7 +246,7 @@ Word occurrences at Sun Nov 18 2018 02:00:00 to 02:59:59
 5. measles 0
 6. ebola 0
 7. zika 0
-Word occurrences at Sun Nov 18 2018 03:00:00 to 03:59:59
+Word occurrences at Sun Nov 18 2018 03:00:00-03:59:59
 1. trump 4
 2. diarrhea 1
 3. flu 0
@@ -254,7 +254,7 @@ Word occurrences at Sun Nov 18 2018 03:00:00 to 03:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 04:00:00 to 04:59:59
+Word occurrences at Sun Nov 18 2018 04:00:00-04:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -262,7 +262,7 @@ Word occurrences at Sun Nov 18 2018 04:00:00 to 04:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 05:00:00 to 05:59:59
+Word occurrences at Sun Nov 18 2018 05:00:00-05:59:59
 1. trump 2
 2. ebola 1
 3. flu 0
@@ -270,7 +270,7 @@ Word occurrences at Sun Nov 18 2018 05:00:00 to 05:59:59
 5. measles 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 07:00:00 to 07:59:59
+Word occurrences at Sun Nov 18 2018 07:00:00-07:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -278,7 +278,7 @@ Word occurrences at Sun Nov 18 2018 07:00:00 to 07:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 13:00:00 to 13:59:59
+Word occurrences at Sun Nov 18 2018 13:00:00-13:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -286,7 +286,7 @@ Word occurrences at Sun Nov 18 2018 13:00:00 to 13:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 15:00:00 to 15:59:59
+Word occurrences at Sun Nov 18 2018 15:00:00-15:59:59
 1. trump 3
 2. ebola 1
 3. headache 1
@@ -294,7 +294,7 @@ Word occurrences at Sun Nov 18 2018 15:00:00 to 15:59:59
 5. diarrhea 0
 6. measles 0
 7. zika 0
-Word occurrences at Sun Nov 18 2018 16:00:00 to 16:59:59
+Word occurrences at Sun Nov 18 2018 16:00:00-16:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -302,7 +302,7 @@ Word occurrences at Sun Nov 18 2018 16:00:00 to 16:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 17:00:00 to 17:59:59
+Word occurrences at Sun Nov 18 2018 17:00:00-17:59:59
 1. trump 2
 2. flu 0
 3. diarrhea 0
@@ -310,7 +310,7 @@ Word occurrences at Sun Nov 18 2018 17:00:00 to 17:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 18:00:00 to 18:59:59
+Word occurrences at Sun Nov 18 2018 18:00:00-18:59:59
 1. trump 3
 2. headache 1
 3. flu 0
@@ -318,7 +318,7 @@ Word occurrences at Sun Nov 18 2018 18:00:00 to 18:59:59
 5. measles 0
 6. ebola 0
 7. zika 0
-Word occurrences at Sun Nov 18 2018 19:00:00 to 19:59:59
+Word occurrences at Sun Nov 18 2018 19:00:00-19:59:59
 1. trump 4
 2. flu 0
 3. diarrhea 0
@@ -326,7 +326,7 @@ Word occurrences at Sun Nov 18 2018 19:00:00 to 19:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 20:00:00 to 20:59:59
+Word occurrences at Sun Nov 18 2018 20:00:00-20:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -334,7 +334,7 @@ Word occurrences at Sun Nov 18 2018 20:00:00 to 20:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 21:00:00 to 21:59:59
+Word occurrences at Sun Nov 18 2018 21:00:00-21:59:59
 1. trump 8
 2. flu 0
 3. diarrhea 0
@@ -342,7 +342,7 @@ Word occurrences at Sun Nov 18 2018 21:00:00 to 21:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 22:00:00 to 22:59:59
+Word occurrences at Sun Nov 18 2018 22:00:00-22:59:59
 1. trump 2
 2. flu 1
 3. diarrhea 0
@@ -350,7 +350,7 @@ Word occurrences at Sun Nov 18 2018 22:00:00 to 22:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Sun Nov 18 2018 23:00:00 to 23:59:59
+Word occurrences at Sun Nov 18 2018 23:00:00-23:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -358,7 +358,7 @@ Word occurrences at Sun Nov 18 2018 23:00:00 to 23:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 00:00:00 to 00:59:59
+Word occurrences at Mon Nov 19 2018 00:00:00-00:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -366,7 +366,7 @@ Word occurrences at Mon Nov 19 2018 00:00:00 to 00:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 01:00:00 to 01:59:59
+Word occurrences at Mon Nov 19 2018 01:00:00-01:59:59
 1. trump 7
 2. flu 0
 3. diarrhea 0
@@ -374,7 +374,7 @@ Word occurrences at Mon Nov 19 2018 01:00:00 to 01:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 02:00:00 to 02:59:59
+Word occurrences at Mon Nov 19 2018 02:00:00-02:59:59
 1. trump 5
 2. flu 0
 3. diarrhea 0
@@ -382,7 +382,7 @@ Word occurrences at Mon Nov 19 2018 02:00:00 to 02:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 03:00:00 to 03:59:59
+Word occurrences at Mon Nov 19 2018 03:00:00-03:59:59
 1. trump 2
 2. flu 0
 3. diarrhea 0
@@ -390,7 +390,7 @@ Word occurrences at Mon Nov 19 2018 03:00:00 to 03:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 04:00:00 to 04:59:59
+Word occurrences at Mon Nov 19 2018 04:00:00-04:59:59
 1. trump 3
 2. flu 1
 3. diarrhea 0
@@ -398,7 +398,7 @@ Word occurrences at Mon Nov 19 2018 04:00:00 to 04:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 05:00:00 to 05:59:59
+Word occurrences at Mon Nov 19 2018 05:00:00-05:59:59
 1. diarrhea 1
 2. ebola 1
 3. trump 0
@@ -406,7 +406,7 @@ Word occurrences at Mon Nov 19 2018 05:00:00 to 05:59:59
 5. measles 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 07:00:00 to 07:59:59
+Word occurrences at Mon Nov 19 2018 07:00:00-07:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -414,7 +414,7 @@ Word occurrences at Mon Nov 19 2018 07:00:00 to 07:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 09:00:00 to 09:59:59
+Word occurrences at Mon Nov 19 2018 09:00:00-09:59:59
 1. trump 1
 2. flu 1
 3. diarrhea 0
@@ -422,7 +422,7 @@ Word occurrences at Mon Nov 19 2018 09:00:00 to 09:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 10:00:00 to 10:59:59
+Word occurrences at Mon Nov 19 2018 10:00:00-10:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -430,7 +430,7 @@ Word occurrences at Mon Nov 19 2018 10:00:00 to 10:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 11:00:00 to 11:59:59
+Word occurrences at Mon Nov 19 2018 11:00:00-11:59:59
 1. trump 4
 2. flu 0
 3. diarrhea 0
@@ -438,7 +438,7 @@ Word occurrences at Mon Nov 19 2018 11:00:00 to 11:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 12:00:00 to 12:59:59
+Word occurrences at Mon Nov 19 2018 12:00:00-12:59:59
 1. trump 3
 2. flu 0
 3. diarrhea 0
@@ -446,7 +446,7 @@ Word occurrences at Mon Nov 19 2018 12:00:00 to 12:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 13:00:00 to 13:59:59
+Word occurrences at Mon Nov 19 2018 13:00:00-13:59:59
 1. trump 0
 2. flu 0
 3. diarrhea 0
@@ -454,7 +454,7 @@ Word occurrences at Mon Nov 19 2018 13:00:00 to 13:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 14:00:00 to 14:59:59
+Word occurrences at Mon Nov 19 2018 14:00:00-14:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -462,7 +462,7 @@ Word occurrences at Mon Nov 19 2018 14:00:00 to 14:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 15:00:00 to 15:59:59
+Word occurrences at Mon Nov 19 2018 15:00:00-15:59:59
 1. flu 48
 2. trump 0
 3. diarrhea 0
@@ -470,7 +470,7 @@ Word occurrences at Mon Nov 19 2018 15:00:00 to 15:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 16:00:00 to 16:59:59
+Word occurrences at Mon Nov 19 2018 16:00:00-16:59:59
 1. flu 91
 2. trump 2
 3. diarrhea 0
@@ -478,7 +478,7 @@ Word occurrences at Mon Nov 19 2018 16:00:00 to 16:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 17:00:00 to 17:59:59
+Word occurrences at Mon Nov 19 2018 17:00:00-17:59:59
 1. trump 20
 2. flu 19
 3. diarrhea 0
@@ -486,7 +486,7 @@ Word occurrences at Mon Nov 19 2018 17:00:00 to 17:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 18:00:00 to 18:59:59
+Word occurrences at Mon Nov 19 2018 18:00:00-18:59:59
 1. trump 11
 2. flu 6
 3. diarrhea 0
@@ -494,7 +494,7 @@ Word occurrences at Mon Nov 19 2018 18:00:00 to 18:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 19:00:00 to 19:59:59
+Word occurrences at Mon Nov 19 2018 19:00:00-19:59:59
 1. trump 2
 2. flu 0
 3. diarrhea 0
@@ -502,7 +502,7 @@ Word occurrences at Mon Nov 19 2018 19:00:00 to 19:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 20:00:00 to 20:59:59
+Word occurrences at Mon Nov 19 2018 20:00:00-20:59:59
 1. trump 7
 2. headache 1
 3. flu 0
@@ -510,7 +510,7 @@ Word occurrences at Mon Nov 19 2018 20:00:00 to 20:59:59
 5. measles 0
 6. ebola 0
 7. zika 0
-Word occurrences at Mon Nov 19 2018 21:00:00 to 21:59:59
+Word occurrences at Mon Nov 19 2018 21:00:00-21:59:59
 1. trump 1
 2. flu 0
 3. diarrhea 0
@@ -518,7 +518,7 @@ Word occurrences at Mon Nov 19 2018 21:00:00 to 21:59:59
 5. ebola 0
 6. zika 0
 7. headache 0
-Word occurrences at Mon Nov 19 2018 22:00:00 to 22:59:59
+Word occurrences at Mon Nov 19 2018 22:00:00-22:59:59
 1. trump 2
 2. flu 0
 3. diarrhea 0
