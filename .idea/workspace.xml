@@ -2,13 +2,731 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5da0d06-3f19-4bc1-b19a-3b5d92003c1e" name="Default" comment="Finished spark code">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3_charts/charts.html" afterPath="$PROJECT_DIR$/D3_charts/charts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3_charts/charts.js" afterPath="$PROJECT_DIR$/D3_charts/charts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3_charts/hashtags_results.csv" afterPath="$PROJECT_DIR$/D3_charts/hashtags_results.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3_charts/users_results.csv" afterPath="$PROJECT_DIR$/D3_charts/users_results.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkPrograms/SparkMain.py" afterPath="$PROJECT_DIR$/SparkPrograms/SparkMain.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/charts.html" afterPath="$PROJECT_DIR$/D3Charts/charts.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/charts.js" afterPath="$PROJECT_DIR$/D3Charts/charts.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/count_results.csv" afterPath="$PROJECT_DIR$/D3Charts/count_results.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/hashtags_results.csv" afterPath="$PROJECT_DIR$/D3Charts/hashtags_results.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/D3Charts/jquery-3.2.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/keyword_results.csv" afterPath="$PROJECT_DIR$/D3Charts/keyword_results.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/.editorconfig" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/.editorconfig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/.eslintignore" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/.eslintignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/.eslintrc" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/.eslintrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/.npmignore" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/LICENSE.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/LICENSE.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/MAINTAINING.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/MAINTAINING.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/book.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/book.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/bower.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/composer.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/composer.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/Chart.bundle.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/Chart.bundle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/Chart.bundle.min.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/Chart.bundle.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/Chart.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/Chart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/Chart.min.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/Chart.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/cartesian/category.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/cartesian/category.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/cartesian/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/cartesian/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/cartesian/linear.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/cartesian/linear.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/cartesian/logarithmic.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/cartesian/logarithmic.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/cartesian/time.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/cartesian/time.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/labelling.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/labelling.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/radial/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/radial/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/radial/linear.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/radial/linear.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/axes/styling.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/axes/styling.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/area.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/area.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/bar.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/bar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/bubble.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/bubble.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/doughnut.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/doughnut.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/line.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/line.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/mixed.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/mixed.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/polar.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/polar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/radar.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/radar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/charts/scatter.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/charts/scatter.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/configuration/animations.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/configuration/animations.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/configuration/elements.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/configuration/elements.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/configuration/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/configuration/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/configuration/layout.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/configuration/layout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/configuration/legend.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/configuration/legend.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/configuration/title.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/configuration/title.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/configuration/tooltip.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/configuration/tooltip.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/developers/api.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/developers/api.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/developers/axes.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/developers/axes.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/developers/charts.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/developers/charts.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/developers/contributing.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/developers/contributing.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/developers/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/developers/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/developers/plugins.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/developers/plugins.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/developers/updates.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/developers/updates.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/general/colors.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/general/colors.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/general/device-pixel-ratio.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/general/device-pixel-ratio.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/general/fonts.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/general/fonts.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/general/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/general/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/general/interactions/events.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/general/interactions/events.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/general/interactions/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/general/interactions/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/general/interactions/modes.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/general/interactions/modes.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/general/options.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/general/options.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/general/responsive.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/general/responsive.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/getting-started/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/getting-started/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/getting-started/installation.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/getting-started/installation.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/getting-started/integration.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/getting-started/integration.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/getting-started/usage.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/getting-started/usage.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/FontAwesome.otf" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/FontAwesome.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-anchorjs/anchor-style.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-anchorjs/anchor-style.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.min.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.min.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.min.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/style.css" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-fontsettings/fontsettings.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-fontsettings/fontsettings.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-fontsettings/website.css" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-fontsettings/website.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-ga/plugin.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-ga/plugin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-highlight/ebook.css" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-highlight/ebook.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-highlight/website.css" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-highlight/website.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-search-plus/jquery.mark.min.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-search-plus/jquery.mark.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-search-plus/search.css" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-search-plus/search.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-search-plus/search.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-search-plus/search.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-sharing/buttons.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-sharing/buttons.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/gitbook.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/gitbook.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/images/apple-touch-icon-precomposed-152.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/images/apple-touch-icon-precomposed-152.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/images/favicon.ico" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/images/favicon.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/style.css" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/gitbook/theme.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/gitbook/theme.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/notes/comparison.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/notes/comparison.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/notes/extensions.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/notes/extensions.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/notes/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/notes/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/notes/license.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/notes/license.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/search_plus_index.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/search_plus_index.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/dist/docs/style.css" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/dist/docs/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/SUMMARY.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/SUMMARY.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/cartesian/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/cartesian/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/cartesian/category.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/cartesian/category.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/cartesian/linear.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/cartesian/linear.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/cartesian/logarithmic.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/cartesian/logarithmic.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/cartesian/time.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/cartesian/time.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/labelling.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/labelling.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/radial/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/radial/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/radial/linear.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/radial/linear.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/axes/styling.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/axes/styling.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/area.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/area.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/bar.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/bar.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/bubble.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/bubble.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/doughnut.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/doughnut.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/line.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/line.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/mixed.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/mixed.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/polar.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/polar.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/radar.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/radar.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/charts/scatter.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/charts/scatter.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/configuration/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/configuration/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/configuration/animations.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/configuration/animations.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/configuration/elements.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/configuration/elements.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/configuration/layout.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/configuration/layout.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/configuration/legend.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/configuration/legend.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/configuration/title.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/configuration/title.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/configuration/tooltip.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/configuration/tooltip.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/developers/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/developers/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/developers/api.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/developers/api.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/developers/axes.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/developers/axes.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/developers/charts.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/developers/charts.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/developers/contributing.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/developers/contributing.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/developers/plugins.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/developers/plugins.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/developers/updates.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/developers/updates.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/general/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/general/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/general/colors.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/general/colors.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/general/device-pixel-ratio.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/general/device-pixel-ratio.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/general/fonts.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/general/fonts.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/general/interactions/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/general/interactions/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/general/interactions/events.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/general/interactions/events.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/general/interactions/modes.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/general/interactions/modes.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/general/options.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/general/options.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/general/responsive.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/general/responsive.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/getting-started/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/getting-started/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/getting-started/installation.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/getting-started/installation.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/getting-started/integration.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/getting-started/integration.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/getting-started/usage.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/getting-started/usage.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/notes/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/notes/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/notes/comparison.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/notes/comparison.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/notes/extensions.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/notes/extensions.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/notes/license.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/notes/license.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/docs/style.css" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/docs/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/gulpfile.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/gulpfile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/karma.conf.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/karma.conf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/package.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/advanced/data-labelling.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/advanced/data-labelling.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/advanced/progress-bar.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/advanced/progress-bar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/area/analyser.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/area/analyser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/area/line-boundaries.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/area/line-boundaries.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/area/line-datasets.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/area/line-datasets.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/area/line-stacked.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/area/line-stacked.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/area/radar.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/area/radar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/bar/horizontal.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/bar/horizontal.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/bar/multi-axis.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/bar/multi-axis.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/bar/stacked-group.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/bar/stacked-group.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/bar/stacked.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/bar/stacked.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/bar/vertical.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/bar/vertical.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/bubble.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/bubble.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/combo-bar-line.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/combo-bar-line.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/doughnut.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/doughnut.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/line/basic.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/line/basic.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/line/interpolation-modes.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/line/interpolation-modes.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/line/line-styles.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/line/line-styles.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/line/multi-axis.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/line/multi-axis.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/line/point-sizes.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/line/point-sizes.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/line/point-styles.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/line/point-styles.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/line/skip-points.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/line/skip-points.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/line/stepped.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/line/stepped.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/pie.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/pie.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/polar-area.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/polar-area.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/radar-skip-points.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/radar-skip-points.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/radar.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/radar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/scatter/basic.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/scatter/basic.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/charts/scatter/multi-axis.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/charts/scatter/multi-axis.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/favicon.ico" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/favicon.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/index.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/legend/point-style.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/legend/point-style.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/legend/positioning.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/legend/positioning.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/logo.svg" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/logo.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/samples.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/samples.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/filtering-labels.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/filtering-labels.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/gridlines-display.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/gridlines-display.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/gridlines-style.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/gridlines-style.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/linear/min-max-suggested.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/linear/min-max-suggested.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/linear/min-max.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/linear/min-max.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/linear/step-size.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/linear/step-size.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/logarithmic/line.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/logarithmic/line.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/logarithmic/scatter.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/logarithmic/scatter.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/multiline-labels.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/multiline-labels.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/non-numeric-y.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/non-numeric-y.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/time/combo.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/time/combo.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/time/financial.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/time/financial.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/time/line-point-data.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/time/line-point-data.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scales/time/line.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scales/time/line.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/scriptable/bubble.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/scriptable/bubble.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/style.css" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/tooltips/border.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/tooltips/border.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/tooltips/callbacks.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/tooltips/callbacks.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/tooltips/custom-line.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/tooltips/custom-line.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/tooltips/custom-pie.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/tooltips/custom-pie.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/tooltips/custom-points.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/tooltips/custom-points.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/tooltips/interactions.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/tooltips/interactions.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/tooltips/positioning.html" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/tooltips/positioning.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/samples/utils.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/samples/utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/scripts/deploy.sh" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/scripts/deploy.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/scripts/release.sh" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/scripts/release.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/chart.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/chart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/charts/Chart.Bar.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/charts/Chart.Bar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/charts/Chart.Bubble.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/charts/Chart.Bubble.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/charts/Chart.Doughnut.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/charts/Chart.Doughnut.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/charts/Chart.Line.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/charts/Chart.Line.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/charts/Chart.PolarArea.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/charts/Chart.PolarArea.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/charts/Chart.Radar.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/charts/Chart.Radar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/charts/Chart.Scatter.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/charts/Chart.Scatter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/controllers/controller.bar.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/controllers/controller.bar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/controllers/controller.bubble.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/controllers/controller.bubble.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/controllers/controller.doughnut.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/controllers/controller.doughnut.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/controllers/controller.line.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/controllers/controller.line.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/controllers/controller.polarArea.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/controllers/controller.polarArea.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/controllers/controller.radar.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/controllers/controller.radar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/controllers/controller.scatter.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/controllers/controller.scatter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.animation.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.animation.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.controller.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.controller.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.datasetController.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.datasetController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.defaults.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.defaults.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.element.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.element.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.helpers.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.helpers.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.interaction.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.interaction.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.layoutService.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.layoutService.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.plugin.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.plugin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.scale.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.scale.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.scaleService.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.scaleService.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.ticks.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.ticks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/core/core.tooltip.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/core/core.tooltip.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/elements/element.arc.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/elements/element.arc.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/elements/element.line.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/elements/element.line.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/elements/element.point.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/elements/element.point.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/elements/element.rectangle.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/elements/element.rectangle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/elements/index.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/elements/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/helpers/helpers.canvas.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/helpers/helpers.canvas.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/helpers/helpers.core.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/helpers/helpers.core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/helpers/helpers.easing.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/helpers/helpers.easing.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/helpers/helpers.options.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/helpers/helpers.options.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/helpers/index.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/helpers/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/platforms/platform.basic.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/platforms/platform.basic.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/platforms/platform.dom.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/platforms/platform.dom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/platforms/platform.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/platforms/platform.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/plugins/plugin.filler.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/plugins/plugin.filler.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/plugins/plugin.legend.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/plugins/plugin.legend.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/plugins/plugin.title.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/plugins/plugin.title.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/scales/scale.category.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/scales/scale.category.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/scales/scale.linear.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/scales/scale.linear.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/scales/scale.linearbase.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/scales/scale.linearbase.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/scales/scale.logarithmic.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/scales/scale.logarithmic.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/scales/scale.radialLinear.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/scales/scale.radialLinear.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/src/scales/scale.time.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/src/scales/scale.time.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/.eslintrc" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/.eslintrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/core.scale/label-offset-vertical-axes.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/core.scale/label-offset-vertical-axes.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/core.scale/label-offset-vertical-axes.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/core.scale/label-offset-vertical-axes.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end-span.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end-span.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end-span.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end-span.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-span.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-span.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-span.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-span.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline-span.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline-span.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline-span.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline-span.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped-span.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped-span.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped-span.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped-span.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start-span.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start-span.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start-span.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start-span.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-span.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-span.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-span.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-span.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline-span.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline-span.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline-span.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline-span.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin-spline.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin-spline.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin-spline.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin-spline.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin.png" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/jasmine.context.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/jasmine.context.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/jasmine.index.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/jasmine.index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/jasmine.matchers.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/jasmine.matchers.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/jasmine.utils.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/jasmine.utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/controller.bar.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/controller.bar.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/controller.bubble.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/controller.bubble.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/controller.doughnut.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/controller.doughnut.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/controller.line.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/controller.line.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/controller.polarArea.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/controller.polarArea.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/controller.radar.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/controller.radar.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.controller.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.controller.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.datasetController.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.datasetController.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.element.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.element.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.helpers.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.helpers.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.interaction.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.interaction.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.layoutService.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.layoutService.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.plugin.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.plugin.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.scale.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.scale.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.scaleService.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.scaleService.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/core.tooltip.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/core.tooltip.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/element.arc.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/element.arc.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/element.line.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/element.line.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/element.point.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/element.point.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/element.rectangle.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/element.rectangle.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/global.defaults.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/global.defaults.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/global.deprecations.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/global.deprecations.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/helpers.canvas.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/helpers.canvas.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/helpers.core.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/helpers.core.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/helpers.easing.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/helpers.easing.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/helpers.options.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/helpers.options.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/platform.dom.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/platform.dom.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/plugin.filler.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/plugin.filler.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/plugin.legend.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/plugin.legend.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/plugin.title.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/plugin.title.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/scale.category.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/scale.category.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/scale.linear.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/scale.linear.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/scale.logarithmic.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/scale.logarithmic.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/scale.radialLinear.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/scale.radialLinear.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chart.js/test/specs/scale.time.tests.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chart.js/test/specs/scale.time.tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color-string/.travis.yml" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color-string/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color-string/CHANGELOG.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color-string/CHANGELOG.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color-string/LICENSE" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color-string/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color-string/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color-string/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color-string/color-string.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color-string/color-string.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color-string/package.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color-string/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color-string/test/basic.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color-string/test/basic.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color/CHANGELOG.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color/CHANGELOG.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color/LICENSE" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color/index.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/chartjs-color/package.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/chartjs-color/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/.travis.yml" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/CHANGELOG.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/CHANGELOG.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/LICENSE" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/component.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/component.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/conversions.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/conversions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/index.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/package.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/test/basic.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/test/basic.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-convert/test/speed.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-convert/test/speed.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-name/.eslintrc.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-name/.eslintrc.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-name/.npmignore" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-name/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-name/LICENSE" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-name/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-name/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-name/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-name/index.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-name/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-name/package.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-name/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/color-name/test.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/color-name/test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/CHANGELOG.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/CHANGELOG.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/LICENSE" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/README.md" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/ender.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/ender.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/af.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/af.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ar-dz.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ar-dz.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ar-kw.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ar-kw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ar-ly.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ar-ly.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ar-ma.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ar-ma.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ar-sa.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ar-sa.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ar-tn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ar-tn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ar.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/az.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/az.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/be.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/be.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/bg.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/bg.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/bn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/bn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/bo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/bo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/br.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/br.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/bs.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/bs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ca.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/cs.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/cs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/cv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/cv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/cy.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/cy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/da.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/da.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/de-at.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/de-at.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/de-ch.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/de-ch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/de.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/de.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/dv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/dv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/el.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/el.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/en-au.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/en-au.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/en-ca.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/en-ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/en-gb.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/en-gb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/en-ie.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/en-ie.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/en-nz.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/en-nz.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/eo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/eo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/es-do.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/es-do.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/es.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/es.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/et.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/et.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/eu.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/eu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/fa.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/fa.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/fi.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/fi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/fo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/fo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/fr-ca.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/fr-ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/fr-ch.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/fr-ch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/fr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/fr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/fy.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/fy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/gd.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/gd.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/gl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/gl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/gom-latn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/gom-latn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/he.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/he.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/hi.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/hi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/hr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/hr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/hu.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/hu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/hy-am.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/hy-am.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/id.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/id.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/is.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/is.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/it.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/it.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ja.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ja.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/jv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/jv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ka.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ka.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/kk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/kk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/km.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/km.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/kn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/kn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ko.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ko.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ky.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ky.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/lb.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/lb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/lo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/lo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/lt.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/lt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/lv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/lv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/me.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/me.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/mi.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/mi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/mk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/mk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ml.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ml.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/mr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/mr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ms-my.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ms-my.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ms.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ms.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/my.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/my.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/nb.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/nb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ne.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ne.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/nl-be.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/nl-be.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/nl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/nl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/nn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/nn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/pa-in.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/pa-in.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/pl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/pl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/pt-br.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/pt-br.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/pt.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/pt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ro.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ro.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ru.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ru.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/sd.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/sd.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/se.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/se.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/si.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/si.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/sk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/sk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/sl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/sl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/sq.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/sq.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/sr-cyrl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/sr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/sr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ss.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ss.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/sv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/sv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/sw.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/sw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ta.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ta.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/te.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/te.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/tet.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/tet.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/th.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/th.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/tl-ph.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/tl-ph.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/tlh.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/tlh.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/tr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/tr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/tzl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/tzl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/tzm-latn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/tzm.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/tzm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/uk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/uk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/ur.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/ur.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/uz-latn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/uz-latn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/uz.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/uz.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/vi.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/vi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/x-pseudo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/x-pseudo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/yo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/yo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/zh-cn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/zh-cn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/zh-hk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/zh-hk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/locale/zh-tw.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/locale/zh-tw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/min/locales.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/min/locales.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/min/locales.min.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/min/locales.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/min/moment-with-locales.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/min/moment-with-locales.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/min/moment-with-locales.min.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/min/moment-with-locales.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/min/moment.min.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/min/moment.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/moment.d.ts" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/moment.d.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/moment.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/moment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/package.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/package.json" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/check-overflow.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/check-overflow.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/date-from-array.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/date-from-array.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/from-anything.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/from-anything.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/from-array.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/from-array.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/from-object.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/from-object.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/from-string-and-array.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/from-string-and-array.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/from-string-and-format.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/from-string-and-format.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/from-string.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/from-string.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/local.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/local.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/parsing-flags.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/parsing-flags.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/utc.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/utc.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/create/valid.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/create/valid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/abs.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/abs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/add-subtract.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/add-subtract.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/as.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/as.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/bubble.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/bubble.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/constructor.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/constructor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/create.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/create.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/duration.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/duration.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/get.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/get.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/humanize.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/humanize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/iso-string.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/iso-string.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/prototype.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/prototype.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/duration/valid.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/duration/valid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/format/format.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/format/format.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/base-config.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/base-config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/calendar.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/constructor.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/constructor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/en.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/en.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/formats.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/formats.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/invalid.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/invalid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/lists.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/lists.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/locale.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/locale.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/locales.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/locales.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/ordinal.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/ordinal.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/pre-post-format.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/pre-post-format.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/prototype.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/prototype.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/relative.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/relative.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/locale/set.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/locale/set.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/add-subtract.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/add-subtract.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/calendar.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/clone.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/clone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/compare.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/compare.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/constructor.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/constructor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/creation-data.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/creation-data.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/diff.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/diff.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/format.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/format.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/from.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/from.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/get-set.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/get-set.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/locale.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/locale.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/min-max.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/min-max.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/moment.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/moment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/now.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/now.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/prototype.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/prototype.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/start-end-of.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/start-end-of.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/to-type.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/to-type.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/to.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/to.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/moment/valid.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/moment/valid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/parse/regex.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/parse/regex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/parse/token.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/parse/token.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/aliases.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/aliases.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/constants.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/constants.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/day-of-month.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/day-of-month.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/day-of-week.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/day-of-week.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/day-of-year.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/day-of-year.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/hour.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/hour.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/millisecond.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/millisecond.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/minute.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/minute.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/month.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/month.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/offset.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/offset.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/priorities.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/priorities.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/quarter.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/quarter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/second.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/second.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/timestamp.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/timestamp.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/timezone.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/timezone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/units.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/units.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/week-calendar-utils.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/week-calendar-utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/week-year.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/week-year.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/week.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/week.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/units/year.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/units/year.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/abs-ceil.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/abs-ceil.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/abs-floor.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/abs-floor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/abs-round.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/abs-round.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/compare-arrays.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/compare-arrays.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/defaults.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/defaults.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/deprecate.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/deprecate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/extend.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/extend.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/has-own-prop.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/has-own-prop.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/hooks.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/hooks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/index-of.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/index-of.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/is-array.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/is-array.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/is-date.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/is-date.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/is-function.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/is-function.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/is-number.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/is-number.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/is-object-empty.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/is-object-empty.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/is-object.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/is-object.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/is-undefined.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/is-undefined.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/keys.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/keys.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/map.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/map.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/some.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/some.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/to-int.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/to-int.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/lib/utils/zero-fill.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/lib/utils/zero-fill.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/af.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/af.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ar-dz.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ar-dz.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ar-kw.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ar-kw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ar-ly.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ar-ly.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ar-ma.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ar-ma.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ar-sa.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ar-sa.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ar-tn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ar-tn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ar.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/az.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/az.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/be.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/be.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/bg.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/bg.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/bn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/bn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/bo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/bo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/br.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/br.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/bs.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/bs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ca.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/cs.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/cs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/cv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/cv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/cy.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/cy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/da.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/da.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/de-at.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/de-at.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/de-ch.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/de-ch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/de.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/de.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/dv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/dv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/el.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/el.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/en-au.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/en-au.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/en-ca.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/en-ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/en-gb.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/en-gb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/en-ie.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/en-ie.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/en-nz.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/en-nz.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/eo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/eo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/es-do.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/es-do.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/es.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/es.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/et.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/et.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/eu.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/eu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/fa.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/fa.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/fi.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/fi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/fo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/fo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/fr-ca.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/fr-ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/fr-ch.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/fr-ch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/fr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/fr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/fy.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/fy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/gd.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/gd.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/gl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/gl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/gom-latn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/gom-latn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/he.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/he.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/hi.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/hi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/hr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/hr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/hu.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/hu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/hy-am.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/hy-am.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/id.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/id.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/is.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/is.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/it.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/it.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ja.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ja.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/jv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/jv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ka.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ka.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/kk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/kk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/km.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/km.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/kn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/kn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ko.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ko.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ky.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ky.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/lb.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/lb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/lo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/lo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/lt.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/lt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/lv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/lv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/me.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/me.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/mi.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/mi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/mk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/mk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ml.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ml.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/mr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/mr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ms-my.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ms-my.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ms.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ms.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/my.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/my.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/nb.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/nb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ne.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ne.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/nl-be.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/nl-be.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/nl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/nl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/nn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/nn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/pa-in.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/pa-in.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/pl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/pl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/pt-br.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/pt-br.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/pt.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/pt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ro.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ro.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ru.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ru.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/sd.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/sd.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/se.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/se.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/si.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/si.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/sk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/sk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/sl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/sl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/sq.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/sq.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/sr-cyrl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/sr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/sr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ss.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ss.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/sv.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/sv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/sw.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/sw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ta.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ta.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/te.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/te.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/tet.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/tet.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/th.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/th.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/tl-ph.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/tl-ph.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/tlh.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/tlh.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/tr.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/tr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/tzl.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/tzl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/tzm-latn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/tzm.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/tzm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/uk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/uk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/ur.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/ur.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/uz-latn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/uz-latn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/uz.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/uz.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/vi.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/vi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/x-pseudo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/x-pseudo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/yo.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/yo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/zh-cn.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/zh-cn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/zh-hk.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/zh-hk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/locale/zh-tw.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/locale/zh-tw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/node_modules/moment/src/moment.js" afterPath="$PROJECT_DIR$/D3Charts/node_modules/moment/src/moment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3_charts/users_results.csv" afterPath="$PROJECT_DIR$/D3Charts/users_results.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/count_results.txt" afterPath="$PROJECT_DIR$/Outputs/count_results.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hashtags_results.txt" afterPath="$PROJECT_DIR$/Outputs/hashtags_results.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/keyword_results.txt" afterPath="$PROJECT_DIR$/Outputs/keyword_results.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/users_results.txt" afterPath="$PROJECT_DIR$/Outputs/users_results.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +760,7 @@
         </entry>
       </file>
       <file leaf-file-name="charts.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3_charts/charts.html">
+        <entry file="file://$PROJECT_DIR$/D3Charts/charts.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="249">
               <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="26" />
@@ -52,7 +770,7 @@
         </entry>
       </file>
       <file leaf-file-name="charts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3_charts/charts.js">
+        <entry file="file://$PROJECT_DIR$/D3Charts/charts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1534">
               <caret line="328" column="21" lean-forward="false" selection-start-line="328" selection-start-column="21" selection-end-line="328" selection-end-column="21" />
@@ -62,7 +780,7 @@
         </entry>
       </file>
       <file leaf-file-name="users_results.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3_charts/users_results.csv">
+        <entry file="file://$PROJECT_DIR$/D3Charts/users_results.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
@@ -82,7 +800,7 @@
         </entry>
       </file>
       <file leaf-file-name="keyword_results.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3_charts/keyword_results.csv">
+        <entry file="file://$PROJECT_DIR$/D3Charts/keyword_results.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="12" />
@@ -92,7 +810,7 @@
         </entry>
       </file>
       <file leaf-file-name="hashtags_results.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3_charts/hashtags_results.csv">
+        <entry file="file://$PROJECT_DIR$/D3Charts/hashtags_results.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
@@ -102,7 +820,7 @@
         </entry>
       </file>
       <file leaf-file-name="count_results.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3_charts/count_results.csv">
+        <entry file="file://$PROJECT_DIR$/D3Charts/count_results.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -195,7 +913,12 @@
             <path>
               <item name="p2BigData" type="b2602c69:ProjectViewProjectNode" />
               <item name="p2BigData" type="462c0819:PsiDirectoryNode" />
-              <item name="D3_charts" type="462c0819:PsiDirectoryNode" />
+              <item name="D3Charts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="p2BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="p2BigData" type="462c0819:PsiDirectoryNode" />
+              <item name="Outputs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="p2BigData" type="b2602c69:ProjectViewProjectNode" />
@@ -219,11 +942,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/TweetCollector" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Outputs" />
+      <recent name="$PROJECT_DIR$/TweetCollector" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,9 +1031,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-4" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19123507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19123507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.251944" sideWeight="0.37609562" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -578,7 +1301,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/count_results.txt">
+    <entry file="file://$PROJECT_DIR$/Outputs/count_results.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="35" />
@@ -586,7 +1309,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3_charts/charts.html">
+    <entry file="file://$PROJECT_DIR$/D3Charts/charts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="26" />
@@ -604,7 +1327,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3_charts/hashtags_results.csv">
+    <entry file="file://$PROJECT_DIR$/D3Charts/hashtags_results.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
@@ -612,7 +1335,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3_charts/count_results.csv">
+    <entry file="file://$PROJECT_DIR$/D3Charts/count_results.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -620,7 +1343,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3_charts/charts.js">
+    <entry file="file://$PROJECT_DIR$/D3Charts/charts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1534">
           <caret line="328" column="21" lean-forward="false" selection-start-line="328" selection-start-column="21" selection-end-line="328" selection-end-column="21" />
@@ -628,7 +1351,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3_charts/keyword_results.csv">
+    <entry file="file://$PROJECT_DIR$/D3Charts/keyword_results.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="12" />
@@ -636,7 +1359,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3_charts/users_results.csv">
+    <entry file="file://$PROJECT_DIR$/D3Charts/users_results.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
