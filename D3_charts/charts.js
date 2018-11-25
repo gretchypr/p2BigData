@@ -1,16 +1,111 @@
 
 $(document).ready(function(){
-    d3.csv("wordCount.csv", function(data) {
-        var count = [];
-        var words = [];
-        for (var i = 0 ; i < data.length; i++) {
-            count[i] = parseInt(data[i]["Count"]);
-            words[i]= data[i]["Word"];
-        }
-        displayWordCountChart(words, count);
-    });
-      displayReplyChart();
-      displayUserMessageChart();
-      displayUsernameChart();
-      displayKeywordChart();
+      displayWordCountChart(count_results);
 });
+
+function displayWordCountChart(results) {
+    var svg = d3.select("#word_count"),
+    margin = 20,
+    diameter = +svg.attr("width"),
+    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
+    var color = d3.scaleLinear()
+        .domain([-1, 5])
+        .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
+        .interpolate(d3.interpolateHcl);
+
+    var pack = d3.pack()
+        .size([diameter - margin, diameter - margin])
+        .padding(2);
+
+    d3.csv("count_results.csv", function(error, data) {
+      if (error) throw error;
+      var root = {name: "WordCount", children: []};
+      // Data obtained
+        var count_results = [];
+        // Date of first data
+        var date = data[0]['date_created'];
+        var time = data[0]['time_created'];
+        var date_res = [];
+        var time_res = [];
+        for (var i = 0 ; i < data.length; i++) {
+            if (date == data[i]['date_created']){
+                if (time == data[i]['time_created'])
+                {
+                    time_res.push({name:data[i]['word'] + "-" + data[i]['count'], size:100});
+                }
+                else {
+                    // Save all results for this date in the list
+                    date_res.push({name:time,children:time_res});
+                    time_res = [];
+                    time = data[i]['time_created'];
+                    time_res.push({name:data[i]['word'] + "-" + data[i]['count'], size:100});
+                }
+
+            }
+            else{
+                // Add the results for the previous date
+                count_results.push({name:date, children:date_res});
+                date = data[i]['date_created'];
+                date_res = [];
+                time_res = [];
+                time_res.push({name:data[i]['word'] + "-" + data[i]['count'], size:100});
+            }
+        }
+
+      root['children'] = count_results;
+      root = d3.hierarchy(root)
+          .sum(function(d) { return d.size; })
+          .sort(function(a, b) { return b.value - a.value; });
+
+      var focus = root,
+          nodes = pack(root).descendants(),
+          view;
+
+      var circle = g.selectAll("circle")
+        .data(nodes)
+        .enter().append("circle")
+          .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+          .style("fill", function(d) { return d.children ? color(d.depth) : null; })
+          .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+
+      var text = g.selectAll("text")
+        .data(nodes)
+        .enter().append("text")
+          .attr("class", "label")
+          .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
+          .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
+          .text(function(d) { return d.data.name; });
+
+      var node = g.selectAll("circle,text");
+
+      svg
+          .style("background", color(-1))
+          .on("click", function() { zoom(root); });
+
+      zoomTo([root.x, root.y, root.r * 2 + margin]);
+
+      function zoom(d) {
+        var focus0 = focus; focus = d;
+
+        var transition = d3.transition()
+            .duration(d3.event.altKey ? 7500 : 750)
+            .tween("zoom", function(d) {
+              var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
+              return function(t) { zoomTo(i(t)); };
+            });
+
+        transition.selectAll("text")
+          .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+            .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
+            .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
+            .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+      }
+
+      function zoomTo(v) {
+        var k = diameter / v[2]; view = v;
+        node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
+        circle.attr("r", function(d) { return d.r * k; });
+      }
+    });
+}

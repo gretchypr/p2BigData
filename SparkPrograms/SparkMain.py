@@ -31,8 +31,10 @@ def hashtagExtractor(hashtags):
 
 
 # Gets top 10 trending hashtags in the last 60 minutes
-def getTrendingHashtags(tweets, output):
+def getTrendingHashtags(tweets, output, csv_output, date_str):
     hashtag_dict = {}
+    output.write("Top ten trending hashtags at " + date_str + "\n")
+    print("Top ten trending hashtags at " + date_str)
     for tweet in tweets:
         if tweet['hashtags'] != "":
             hashtags = tweet['hashtags'].split()
@@ -43,6 +45,7 @@ def getTrendingHashtags(tweets, output):
                     hashtag_dict[hashtag] = 1
     count = 1
     for hashtag in sorted(hashtag_dict, key=hashtag_dict.get, reverse=True):
+        csv_output.write(date_str[4:15] + "," + date_str[16:34] + ",#" + hashtag + "," + str(hashtag_dict[hashtag]) + "\n")
         output.write(str(count) + ". #" + hashtag + " " + str(hashtag_dict[hashtag]) + "\n")
         print(str(count) + ". #" + hashtag + " " + str(hashtag_dict[hashtag]))
         count = count + 1
@@ -51,8 +54,10 @@ def getTrendingHashtags(tweets, output):
 
 
 # Gets top 10 keywords in the last 60 minutes
-def getKeywords(tweets, output):
+def getKeywords(tweets, output, csv_output, date_str):
     keyword_dict = {}
+    output.write("Top ten keywords at " + date_str + "\n")
+    print("Top ten keywords at " + date_str)
     # Stop words. Same list as in P1
     stop_words = ["how", "after", "a", "with", "the", "in", "then", "out",
                   "which", "how's", "what", "when", "what's", "of",
@@ -83,16 +88,20 @@ def getKeywords(tweets, output):
         print(str(count) + ". " + word + " " + str(keyword_dict[word]))
         try:
             output.write(str(count) + ". " + word + " " + str(keyword_dict[word]) + "\n")
+            csv_output.write(date_str[4:15] + "," + date_str[16:34] + "," + word + "," + str(keyword_dict[word]) + "\n")
         except UnicodeEncodeError:
             output.write(str(count) + ". emoji :) " + str(keyword_dict[word]) + "\n")
+            csv_output.write(date_str + ",emoji[:)]," + str(keyword_dict[word]) + "\n")
         count = count + 1
         if count == 11:
             return
 
 
 # Get count of certain words
-def countWords(tweets, output):
+def countWords(tweets, output, csv_output, date_str):
     word_dict = {'trump': 0, 'flu': 0, 'zika': 0, 'diarrhea': 0, 'ebola': 0, 'headache': 0, 'measles': 0}
+    output.write("Word occurrences at " + date_str + "\n")
+    print("Word occurrences at " + date_str)
     for tweet in tweets:
         words = tweet['full_text'].split()
         for word in words:
@@ -103,6 +112,7 @@ def countWords(tweets, output):
     count = 1
     for word in sorted(word_dict, key=word_dict.get, reverse=True):
         output.write(str(count) + ". " + word + " " + str(word_dict[word]) + "\n")
+        csv_output.write(date_str[4:15] + "," + date_str[16:34] + "," + word + "," + str(word_dict[word]) + "\n")
         print(str(count) + ". " + word + " " + str(word_dict[word]))
         count = count + 1
         if count == 11:
@@ -111,12 +121,21 @@ def countWords(tweets, output):
 initial_data = spark.read.json('/input/output_tweets.json')
 total_rows = initial_data.count()
 tweet_count = 0
+# File for formatted output
 hashtag_file = open('hashtags_results.txt', 'w')
 user_file = open('users_results.txt', 'w')
 count_file = open('count_results.txt', 'w')
 keyword_file = open('keyword_results.txt', 'w')
-
-
+# File for csv data
+hashtag_csv = open('hashtags_results.csv', 'w')
+user_csv = open('users_results.csv', 'w')
+count_csv = open('count_results.csv', 'w')
+keyword_csv = open('keyword_results.csv', 'w')
+# Column names
+count_csv.write("date_created,time_created,word,count\n")
+keyword_csv.write("date_created,time_created,keyword,count\n")
+hashtag_csv.write("date_created, time_created,hashtag,count\n")
+user_csv.write("created_date,time_created,username,tweets_posted\n")
 # Function for converting created_at date string to created timeStamp type
 date_converter = udf(lambda x: datetime.strptime(x[0:20] + x[26:len(x)], "%a %b %d %H:%M:%S %Y"), TimestampType())
 # Function for adding hashtags as column
@@ -125,10 +144,8 @@ hashtag_extractor = udf(hashtagExtractor)
 full_text_extractor = udf(getFullText)
 # Function that gets user name
 username_extractor = udf(lambda x: x['screen_name'])
-
 # Create new RDD with date column for when the data was created
 tweets_df = initial_data.withColumn('created_date', date_converter(initial_data['created_at'])).withColumn('hashtags', hashtag_extractor(initial_data['entities']['hashtags'])).withColumn('full_text', full_text_extractor(initial_data['retweeted_status'], initial_data['quoted_status'], initial_data['text'], initial_data['extended_tweet'])).withColumn('username', username_extractor(initial_data['user']))
-
 # The tweets obtained in output_tweets.json are in order of how they were found
 # so the first tweet in the data is also the oldest tweet in the data, the last tweet
 # will be the newest tweet
@@ -146,44 +163,33 @@ while tweet_count < total_rows:
     tweets_one_hour = tweets_df.select('id', 'hashtags', 'username', 'full_text').filter(tweets_df['created_date'] >= start_created_date).filter(tweets_df['created_date'] <= one_hour_end_date)
     # Get all the tweets in this 12 hour interval
     tweets_twelve_hours = tweets_df.select('id', 'hashtags', 'username', 'full_text').filter(tweets_df['created_date'] >= start_created_date).filter(tweets_df['created_date'] <= twelve_hour_end_date)
+    # Get date string for one hour
+    one_hour_str = start_created_date.strftime("%a %b %d %Y %H:%M:%S") + "-" + one_hour_end_date.strftime("%H:%M:%S")
+    # Get date string for 12 hours
+    twelve_hour_str = start_created_date.strftime("%a %b %d %Y %H:%M:%S") + "-" + twelve_hour_end_date.strftime("%H:%M:%S")
     # Get list of the texts of each tweet
     tweet_texts = tweets_one_hour.select('full_text').collect()
     if tweets_one_hour.count() != 0:
-        keyword_file.write("Top ten keywords at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
-                          + one_hour_end_date.strftime("%H:%M:%S") + "\n")
-        print("Top ten keywords at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
-              + one_hour_end_date.strftime("%H:%M:%S"))
         # Print top ten keywords in the last hour
-        getKeywords(tweet_texts, keyword_file)
-        count_file.write("Word occurrences at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
-                          + one_hour_end_date.strftime("%H:%M:%S") + "\n")
-        print("Word occurrences at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
-              + one_hour_end_date.strftime("%H:%M:%S"))
+        getKeywords(tweet_texts, keyword_file, keyword_csv, one_hour_str)
         # Print the occurence of certain words
-        countWords(tweet_texts, count_file)
+        countWords(tweet_texts, count_file, count_csv, one_hour_str)
         # Get list of all the hashtags
         hashtags = tweets_one_hour.select('hashtags').collect()
-        hashtag_file.write("Top ten trending hashtags at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
-                          + one_hour_end_date.strftime("%H:%M:%S") + "\n")
-        print("Top ten trending hashtags at " + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
-              + one_hour_end_date.strftime("%H:%M:%S"))
         # Print the top 10 trending hashtags in the last hour
-        getTrendingHashtags(hashtags, hashtag_file)
+        getTrendingHashtags(hashtags, hashtag_file, hashtag_csv, one_hour_str)
     if tweets_twelve_hours.count() != 0:
         # Get the users and count them. Order them in ascending order of the number of tweets they have posted
         tweets_twelve_hours.createOrReplaceTempView("tweet")
         users = spark.sql("select username, count(username) as tweets_posted from tweet "
                           "group by username order by tweets_posted")
-        user_file.write("Top ten participants of " + str(users.count()) + " at "
-                          + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
-                          + twelve_hour_end_date.strftime("%H:%M:%S") + "\n")
-        print("Top ten participants of " + str(users.count()) + " at "
-              + start_created_date.strftime("%a %b %d %Y %H:%M:%S") + " to "
-              + twelve_hour_end_date.strftime("%H:%M:%S"))
+        user_file.write("Top ten participants of " + str(users.count()) + " at " + twelve_hour_str + "\n")
+        print("Top ten participants of " + str(users.count()) + " at " + twelve_hour_str)
         users.show(10)
         user_list = users.collect()
         i = 1
         for user in user_list:
+            user_csv.write(twelve_hour_str[4:15] + "," + twelve_hour_str[16:34] + "," + user['username'] + "," + str(user['tweets_posted']) + "\n")
             user_file.write(str(i) + ". " + user['username'] + " " + str(user['tweets_posted']) + "\n")
             i = i + 1
             if i >= 11:
