@@ -9,7 +9,7 @@
     <script src= "node_modules/chart.js/dist/Chart.min.js"></script>
     <script src= "node_modules/chart.js/dist/Chart.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
-    <script src="graphs.js"> </script>
+    <script src="charts.js"> </script>
     <style>
         .node {
             cursor: pointer;
@@ -22,7 +22,7 @@
             fill: white;
         }
         .label {
-            font: 9px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
             text-anchor: middle;
             text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
         }
@@ -51,19 +51,35 @@
         #levels-mess{
           margin-left: 120px;
         }
+        .node circle {
+          fill: #fff;
+          stroke: steelblue;
+          stroke-width: 3px;
+        }
+
+        .node text {
+          font: 12px sans-serif;
+        }
+
+        .link {
+          fill: none;
+          stroke: #ccc;
+          stroke-width: 2px;
+        }
+
    </style>
 </head>
 <body>
     <div class="charts">
 			<h1>Charts</h1>
             <h3>Top keywords per hour</h3>
-			<svg id="keywords" width="1500" height="1500"></svg>
+			<svg id="keywords" width="1000" height="1000"></svg>
             <h3>Word Count per hour</h3>
-            <svg id="word_count" width="1500" height="1500"></svg>
+            <svg id="word_count" width="1000" height="1000"></svg>
             <h3>Top Hashtags per hour</h3>
-            <svg id="hashtags" width="1500" height="1500"></svg>
+            <svg id="hashtags" width="1000" height="1000"></svg>
             <h3>Top Users per 12 hours</h3>
-            <svg id="users" width="1500" height="1500"></svg>
+            <svg id="users" width="1000" height="1000"></svg>
     </div>
     <footer>
     	<p>2018 Copyright of ICOM6115. Look at the pretty graphs.</p>

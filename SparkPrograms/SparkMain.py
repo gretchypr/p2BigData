@@ -91,7 +91,7 @@ def getKeywords(tweets, output, csv_output, date_str):
             csv_output.write(date_str[4:15] + "," + date_str[16:34] + "," + word + "," + str(keyword_dict[word]) + "\n")
         except UnicodeEncodeError:
             output.write(str(count) + ". emoji :) " + str(keyword_dict[word]) + "\n")
-            csv_output.write(date_str + ",emoji[:)]," + str(keyword_dict[word]) + "\n")
+            csv_output.write(date_str[4:15] + "," + date_str[16:34] + ",emoji[:)]," + str(keyword_dict[word]) + "\n")
         count = count + 1
         if count == 11:
             return
@@ -134,7 +134,7 @@ keyword_csv = open('keyword_results.csv', 'w')
 # Column names
 count_csv.write("date_created,time_created,word,count\n")
 keyword_csv.write("date_created,time_created,keyword,count\n")
-hashtag_csv.write("date_created, time_created,hashtag,count\n")
+hashtag_csv.write("date_created,time_created,hashtag,count\n")
 user_csv.write("created_date,time_created,username,tweets_posted\n")
 # Function for converting created_at date string to created timeStamp type
 date_converter = udf(lambda x: datetime.strptime(x[0:20] + x[26:len(x)], "%a %b %d %H:%M:%S %Y"), TimestampType())
